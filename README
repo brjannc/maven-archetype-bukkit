@@ -1,0 +1,43 @@
+			   [ maven-archetype-bukkit ]
+
+maven-archetype-bukkit is an Apache Maven archetype for Bukkit plugins.
+
+				   [ Usage ]
+
+If you're using Maven from the command line, first build and install the
+archetype into your local repository:
+
+$ mvn clean install
+
+Then, in the directory where you'd like your new plugin's directory to
+be created:
+
+$ mvn archetype:generate -DarchetypeCatalog=local
+
+And select maven-archetype-bukkit from the list. You'll then be prompted to
+configure the new project. Along with the standard properties of groupId,
+artifactId, version, and package, you'll be asked to supply your name and email
+address as well as a prefix to use for your plugin's in-game commands. The name
+and email address you supply will be used in the copyright header in the
+generated source files as well as in the project's POM. For example:
+
+Define value for property 'groupId': : me.brjannc.plugins
+Define value for property 'artifactId': : Example
+Define value for property 'version':  1.0-SNAPSHOT: : 
+Define value for property 'package':  me.brjannc.plugins: : me.brjannc.plugins.example
+Define value for property 'authorEmail': : brjannc at gmail.com
+Define value for property 'authorName': : brjannc
+Define value for property 'commandPrefix': : ex
+
+You'll then be asked to verify the properties; if everything looks good, say 'Y'
+and the new project will be created.
+
+If you're using NetBeans, open the archetype project, ignore the fact that
+everything looks broken (NetBeans doesn't understand archetypes, apparently),
+and just clean and build. Then open the "New Project" dialog, select "Maven" and
+"Project from Archetype", then click "Next". In the "Local Archetype Catalog"
+section, select maven-archetype-bukkit and click "Next". Then fill in the
+properties (as described above), click "Finish", and the new project will be
+created.
+
+-brj
