@@ -1,0 +1,12 @@
+name: ${project.name}
+version: ${project.version}
+author: ${authorName}
+description: ${project.description}
+main: ${package}.${artifactId}
+startup: postworld
+database: false
+commands:
+  ${commandPrefix}help:
+    usage: /<command>
+    description: Display help text
+    
