@@ -17,11 +17,7 @@
 package ${package};
 
 import java.util.logging.Logger;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
-import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.Configuration;
-import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class ${artifactId} extends JavaPlugin {
@@ -29,11 +25,6 @@ public class ${artifactId} extends JavaPlugin {
         
     @Override
     public void onEnable() {
-        PluginManager pluginManager = getServer().getPluginManager();
-
-        CommandExecutor commandExecutor = new ${artifactId}CommandExecutor(this);
-        getCommand("${commandPrefix}help").setExecutor(commandExecutor);
-        
         startup();
 
         log.info(this + " is now enabled");
@@ -44,11 +35,6 @@ public class ${artifactId} extends JavaPlugin {
         shutdown();
 
         log.info(this + " is now disabled");
-    }
-
-    @Override
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        return false;
     }
 
     private void startup() {
