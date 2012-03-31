@@ -27,7 +27,6 @@ Define value for property 'version':  1.0-SNAPSHOT: :
 Define value for property 'package':  me.brjannc.plugins: : me.brjannc.plugins.example
 Define value for property 'authorEmail': : brjannc at gmail.com
 Define value for property 'authorName': : brjannc
-Define value for property 'commandPrefix': : ex
 
 You'll then be asked to verify the properties; if everything looks good, say 'Y'
 and the new project will be created.
