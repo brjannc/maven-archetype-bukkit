@@ -3,6 +3,7 @@
     <requiredProperties>
         <requiredProperty key="authorName"/>
         <requiredProperty key="authorEmail"/>
+        <requiredProperty key="bukkitVersion"/>
     </requiredProperties>
     <fileSets>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
