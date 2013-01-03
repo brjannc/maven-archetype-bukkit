@@ -28,7 +28,7 @@
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.2.4-R1.0</version>
+            <version>${bukkitVersion}</version>
         </dependency>
     </dependencies>
     <build>
